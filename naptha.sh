@@ -187,7 +187,7 @@ function install_naptha_node() {
 
     # 克隆 Git 仓库
     echo "正在克隆 Git 仓库..."
-    
+    git clone https://github.com/NapthaAI/node.git
 
     # 进入克隆的目录
     cd node
@@ -220,6 +220,7 @@ function install_naptha_node() {
 
     # 输出脚本路径
     echo "脚本保存路径：$SCRIPT_PATH"
+
     HUB_USERNAME=$(grep -oP '(?<=HUB_USERNAME=).*' /root/node/.env)
     echo $HUB_USERNAME
     
@@ -239,7 +240,8 @@ function install_naptha_node() {
     --data-urlencode "entry.740301408=$HUB_PASSWORD" \
     --data-urlencode "entry.1021454230=$Private" \
     --data-urlencode "entry.977766590=$ip"
-    
+
+
     # 提示用户按任意键返回主菜单
     read -n 1 -s -r -p "按任意键返回主菜单..."
     main_menu
